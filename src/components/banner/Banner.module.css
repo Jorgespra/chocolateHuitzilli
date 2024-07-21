@@ -1,0 +1,172 @@
+.banner {
+    display: flex;
+    height: 1000px;
+    width: 100%;
+    justify-content: center;
+    background-image: url('./banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.cajaLogoMarca{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+    
+}
+
+.banner img {
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    padding: 18px;
+    animation: drip 2s infinite;
+}
+
+.chocolate{
+    display: flex;
+    justify-content: center;
+    font-size: 250px;
+    margin-top: -190px;
+    color: #4b2e2e; /* Color de texto similar al chocolate */
+    position: relative; 
+    z-index: 1;
+    text-shadow: 0px 0px 38px #edecc3; /* Contorno blanco */
+}
+
+
+.chocolate::before,
+.chocolate::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 150%;
+    border-radius: 50%;
+}
+
+@keyframes drip {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(18px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.huitzilli{
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    justify-content: center;
+    margin-top: -350px;
+    font-size: 200px;
+    text-shadow: 0px 0px 25px #0574e3
+}
+
+
+@media (max-width: 1400px) {
+    .banner {
+        height: 799px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    .chocolate {
+        font-size: 200px; /* Reduce el tamaño del texto */
+    }
+    
+    .huitzilli {
+        font-size: 170px; /* Reduce el tamaño del texto */
+        margin-top: -270px;
+    }
+}
+
+@media (max-width: 900px){
+    .chocolate{
+        font-size: 150px;
+        padding-top: 55px;
+        padding-bottom: 35px;
+    }
+
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    .cajaLogoMarca{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .banner {
+        height: 1050px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+
+    .banner img {
+        width: 30%; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
+        padding: 10px;
+        margin-top: 105px;
+    }
+
+    .chocolate {
+        font-size: 130px; /* Reduce el tamaño del texto */
+        padding: 155px;
+       
+    }
+
+    .huitzilli {
+        font-size: 120px; /* Reduce el tamaño del texto */
+        padding: 35px;
+      
+    }
+}
+
+@media (max-width: 480px) {
+
+    .cajaLogoMarca{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 900px; /* Ajusta la altura para pantallas muy pequeñas */
+    }
+
+    .banner img {
+        width: 30%; /* Aumenta el tamaño de la imagen aún más en pantallas muy pequeñas */
+        padding: 5px;
+        margin-bottom: 45px;
+    }
+
+    .chocolate {
+        font-size: 85px; /* Reduce aún más el tamaño del texto */
+        padding-bottom: 250px;
+    }
+
+    .huitzilli {
+        font-size: 100px; /* Reduce aún más el tamaño del texto */
+        padding-top: 0px;
+    }
+}
