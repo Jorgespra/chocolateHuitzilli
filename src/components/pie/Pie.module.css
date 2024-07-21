@@ -1,0 +1,18 @@
+.pie{
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: xx-large;
+    margin-bottom: 0px;
+    height: 85px;
+}
+
+@media (max-width: 480px){
+    .pie{
+        font-size: large;
+    }
+}
