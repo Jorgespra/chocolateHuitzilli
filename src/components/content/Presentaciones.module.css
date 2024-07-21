@@ -1,0 +1,101 @@
+.Present {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 95px;
+}
+
+.Present h1 {
+    font-size: 105px;
+}
+
+.Present h3 {
+    font-size: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: -30px;
+}
+
+.Cuadro {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.CuadroBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 25px;
+    height: 300px;
+    width: 500px;
+    border: solid black 3.5px;
+    border-radius: 55px;
+    margin-top: -30px;
+}
+
+.CuadroBox h2 {
+    font-size: 60px;
+
+}
+
+.CuadroBox p {
+    display: flex;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align: center;
+    margin-top: -15px;
+}
+
+@media (max-width: 900px){
+    .Present h1 {
+        text-align: center;
+        font-size: 150px;
+    }
+    .CuadroBox {
+        margin: 20px 25px;
+        height: 300px;
+        width: 620px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .Present h1 {
+        text-align: center;
+        font-size: 150px;
+    }
+
+
+    .CuadroBox {
+        margin: 20px 25px;
+        height: 300px;
+        width: 620px;
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+    .Present h1 {
+        text-align: center;
+        font-size: 90px;
+    }
+
+    .Present h3 {
+        font-size: 50px;
+    }
+
+    .CuadroBox {
+        margin: 20px 25px;
+        height: 310px;
+        width: 400px;
+    }
+
+}

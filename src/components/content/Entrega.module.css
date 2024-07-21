@@ -1,0 +1,84 @@
+.BoxEntrega {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+.BoxEntrega h1 {
+    font-size: 75px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boxAddress {
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.boxindividual {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(203, 195, 185);
+    align-items: center;
+    border: solid black 2px;
+    border-radius: 55px;
+    margin: 0px 15px 0px 15px;
+    width: 370px;
+    text-decoration: none; /* Para quitar el subrayado del enlace */
+    color: inherit; /* Para heredar el color del texto */
+}
+
+.boxindividual h2 {
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.boxindividual p {
+    font-size: 25px;
+    font-family: serif;
+    margin: 0px 8px 0px 8px;
+    text-align: center;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
+  
+}
+
+.horarios h3 {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1440px) {
+    .BoxEntrega h1 {
+        text-align: center;
+    }
+
+    .boxindividual {
+        width: 450px;
+        margin: 0px 25px 25px 25px;
+       
+    }
+}
+
+
+@media (max-width: 768px){
+    .BoxEntrega h1 {
+        text-align: center;
+        font-size: 65px;
+    }
+
+    .boxindividual {
+        width: 320px;
+        margin: 0px 15px 45px 15px;
+    }
+}
