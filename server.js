@@ -9,7 +9,7 @@ const app = express();
 const port = 3500;
 
 const corsOptions = {
-    origin: 'http://localhost:3000', 
+    origin: 'https://jorgespra.github.io', 
     methods: 'GET,POST',
     allowedHeaders: 'Content-Type'
 };
