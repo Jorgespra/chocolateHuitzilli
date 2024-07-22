@@ -14,7 +14,7 @@ function ContactFormModal({ closeModal }) {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:3500/send-email', { name, email, subject, text });
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/send-email`, { name, email, subject, text });
             setStatus(response.data);
             setName('');
             setEmail('');
