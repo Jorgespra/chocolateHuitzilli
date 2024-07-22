@@ -1,1 +1,8 @@
+# Ignorar la carpeta node_modules en todo el proyecto
+node_modules/
 
+# Ignorar todos los archivos con extensión .txt
+*.txt
+
+# Ignorar la carpeta middleman en la raíz del proyecto
+/middleman/
