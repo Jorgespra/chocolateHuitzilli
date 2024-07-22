@@ -21,9 +21,9 @@ app.use(bodyParser.json());
 app.post('/send-email', async (req, res) => {
     const { email, subject, text } = req.body;
 
-    // Configurar Nodemailer
+   
     const transporter = nodemailer.createTransport({
-        service: 'gmail', // o cualquier servicio de correo que estés utilizando
+        service: 'gmail', 
         auth: {
             user: process.env.EMAIL_USER,
             pass: process.env.EMAIL_PASS

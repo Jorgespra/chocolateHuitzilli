@@ -13,8 +13,11 @@ function ContactFormModal({ closeModal }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        const apiUrl = 'https://jorgespra.github.io/chocolateHuitzilli';
+        const endpoint = '/send-email';
+
         try {
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/send-email`, { name, email, subject, text });
+            const response = await axios.post(apiUrl + endpoint, { name, email, subject, text });
             setStatus(response.data);
             setName('');
             setEmail('');
