@@ -1,19 +1,21 @@
-import Banner from "../../components/banner"; 
+import Banner from "../../components/banner";
 import Pie from "../../components/pie";
 import Content from "../../components/content";
+import Cabecera from "../../components/cabecera";
 
 
 function Inicio() {
-  
-  return(
+
+  return (
     <>
-    <Banner/>
-    <Content/>
-    <Pie/>
+      <Cabecera />
+      <Banner />
+      <Content />
+      <Pie />
     </>
-    
+
   )
- 
+
 
 }
 

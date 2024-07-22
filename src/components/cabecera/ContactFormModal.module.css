@@ -1,0 +1,81 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.649);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1200;
+}
+
+.modalOverlay h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+
+.modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 700px;
+    height: 650px;
+    max-width: 95%;
+    position: relative;
+}
+
+.modalContent p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    text-align: center;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.contactForm label {
+    margin-bottom: 10px;
+}
+
+.contactForm input, .contactForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 35px;
+    background-color: rgb(184, 182, 182);
+    font-size: 20px;
+}
+
+.contactForm button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contactForm button:hover {
+    background-color: #0056b3;
+}

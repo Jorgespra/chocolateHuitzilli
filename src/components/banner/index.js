@@ -3,7 +3,6 @@ import styles from './Banner.module.css';
 import logo from './LogoColibri.png';
 
 function Banner() {
-    console.log("banner");
        return (
         <section className={styles.banner}>
             <div className={styles.content}>

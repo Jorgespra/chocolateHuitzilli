@@ -13,7 +13,6 @@
 .boxAddress {
     display: flex;
     justify-content: center;
-    background-color: beige;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -27,8 +26,8 @@
     border-radius: 55px;
     margin: 0px 15px 0px 15px;
     width: 370px;
-    text-decoration: none; /* Para quitar el subrayado del enlace */
-    color: inherit; /* Para heredar el color del texto */
+    text-decoration: none;
+    color: inherit; 
 }
 
 .boxindividual h2 {

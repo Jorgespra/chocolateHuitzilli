@@ -1,0 +1,18 @@
+correo en servidor interno
+
+const app = express();
+const port = 3500;
+
+const corsOptions = {
+    origin: 'http://localhost:3000', 
+    methods: 'GET,POST',
+    allowedHeaders: 'Content-Type'
+};
+
+
+para instalar que funcione el formulario como servidor interno
+
+npm install express nodemailer body-parser cors dotenv 
+
+para correr el servido interno es con node server.js, para comprobar que se esten enviando los 
+correos
