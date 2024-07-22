@@ -13,7 +13,7 @@ function ContactFormModal({ closeModal }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const apiUrl = 'https://jorgespra.github.io/chocolateHuitzilli';
+        const apiUrl = 'https://vercel-app-url';;
         const endpoint = '/send-email';
 
         try {
