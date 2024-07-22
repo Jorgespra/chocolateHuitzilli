@@ -23,7 +23,7 @@ function Productos() {
                     </div>
 
                     <div className={styles.boxProduct}>
-                        <h1>Chocolate almendrado</h1>
+                        <h1>Chocolate Almendrado</h1>
                         <p>Combina cacao de alta calidad con almendras tostadas, troceadas y un toque de canela, ofreciendo un sabor rico y una textura crujiente. Esta combinación de ingredientes proporciona una experiencia gourmet satisfactoria y deliciosa, ideal para los amantes de sabores complejos y armoniosos.</p>
                     </div>
 
