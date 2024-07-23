@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styles from './ContactFormModal.module.css';
-import axios from 'axios';
+// import axios from 'axios';
+import emailjs from 'emailjs-com';
 
 function ContactFormModal({ closeModal }) {
     const [name, setName] = useState('');
@@ -13,11 +14,19 @@ function ContactFormModal({ closeModal }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const apiUrl = process.env.REACT_APP_BACKEND_URL;
-        const endpoint = '/send-email';
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: text,
+        };
+
+        /* const apiUrl = process.env.REACT_APP_BACKEND_URL;
+        const endpoint = '/send-email'; */
 
         try {
-            const response = await axios.post(apiUrl + endpoint, { name, email, subject, text });
+            await emailjs.send(
+             /*    apiUrl + endpoint, { name, email, subject, text });
             setStatus(response.data);
             setName('');
             setEmail('');
@@ -25,7 +34,21 @@ function ContactFormModal({ closeModal }) {
             setText('');
         } catch (error) {
             setStatus('Error al enviar el correo');
-        }
+        } */
+            process.env.REACT_APP_EMAILJS_SERVICE_ID, // Reemplaza con tu ID de servicio
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Reemplaza con tu ID de plantilla
+            templateParams,
+            //process.env.REACT_APP_EMAILJS_USER_ID
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY // Reemplaza con tu ID de usuario
+        );
+        setStatus('Correo enviado exitosamente');
+        setName('');
+        setEmail('');
+        setSubject('');
+        setText('');
+    } catch (error) {
+        setStatus('Error al enviar el correo');
+    }
     };
 
     return (
