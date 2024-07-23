@@ -13,7 +13,7 @@ function ContactFormModal({ closeModal }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const apiUrl = process.env.REACT_APP_BACKEND_URL || 'https://vercel-app-url';
+        const apiUrl = process.env.REACT_APP_BACKEND_URL;
         const endpoint = '/send-email';
 
         try {
