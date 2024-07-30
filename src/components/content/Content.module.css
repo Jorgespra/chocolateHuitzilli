@@ -70,7 +70,17 @@
 
     .texto li {
         line-height:1em;
-        margin-bottom: 25px;
+        margin-bottom: 25px;    
     }
+
+}
+
+
+@media (max-width: 1080px) {
+
+.img{
+    width: auto;
+    height: 250px;
+}
 
 }
