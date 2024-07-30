@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chocolateHuitzilli/static/css/main.d4510f76.css",
+    "main.css": "/chocolateHuitzilli/static/css/main.78c8eb72.css",
     "main.js": "/chocolateHuitzilli/static/js/main.de21eaaa.js",
     "static/js/453.e30d379c.chunk.js": "/chocolateHuitzilli/static/js/453.e30d379c.chunk.js",
     "static/media/ChocolateEnCajaMadera.jpg": "/chocolateHuitzilli/static/media/ChocolateEnCajaMadera.759a5cccf4108dd7e51d.jpg",
@@ -8,12 +8,12 @@
     "static/media/LogoColibri.png": "/chocolateHuitzilli/static/media/LogoColibri.3dd1d9b8a94f3b239185.png",
     "static/media/GranoChocolateFondo.jpg": "/chocolateHuitzilli/static/media/GranoChocolateFondo.26d1213831a95ce8f903.jpg",
     "index.html": "/chocolateHuitzilli/index.html",
-    "main.d4510f76.css.map": "/chocolateHuitzilli/static/css/main.d4510f76.css.map",
+    "main.78c8eb72.css.map": "/chocolateHuitzilli/static/css/main.78c8eb72.css.map",
     "main.de21eaaa.js.map": "/chocolateHuitzilli/static/js/main.de21eaaa.js.map",
     "453.e30d379c.chunk.js.map": "/chocolateHuitzilli/static/js/453.e30d379c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4510f76.css",
+    "static/css/main.78c8eb72.css",
     "static/js/main.de21eaaa.js"
   ]
 }
