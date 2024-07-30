@@ -81,3 +81,19 @@
         margin: 0px 15px 45px 15px;
     }
 }
+
+@media (max-width: 480px){
+    .BoxEntrega{
+        width: 410px;
+        justify-content: center;
+    }
+
+    .BoxEntrega h1{
+        font-size: 45px;
+    }
+
+
+
+
+
+}

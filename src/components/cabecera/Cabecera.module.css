@@ -48,10 +48,11 @@
     background-color: rgb(73, 151, 151);
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 480px) {
 
     .cabecera {
         height: 70px;
+        width: 380px;
         display: flex;
         z-index: auto;
         justify-content:center;

@@ -25,13 +25,13 @@
     z-index: 0;
 }
 
-.cajaLogoMarca{
+.cajaLogoMarca {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
 
-    
+
 }
 
 .banner img {
@@ -43,15 +43,17 @@
     animation: drip 2s infinite;
 }
 
-.chocolate{
+.chocolate {
     display: flex;
     justify-content: center;
     font-size: 250px;
     margin-top: -190px;
-    color: #4b2e2e; /* Color de texto similar al chocolate */
-    position: relative; 
+    color: #4b2e2e;
+    /* Color de texto similar al chocolate */
+    position: relative;
     z-index: 1;
-    text-shadow: 0px 0px 38px #edecc3; /* Contorno blanco */
+    text-shadow: 0px 0px 38px #edecc3;
+    /* Contorno blanco */
 }
 
 
@@ -69,15 +71,17 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(18px);
     }
+
     100% {
         transform: translateY(0);
     }
 }
 
-.huitzilli{
+.huitzilli {
     display: flex;
     font-family: "Oswald", sans-serif;
     justify-content: center;
@@ -89,92 +93,90 @@
 
 @media (max-width: 1400px) {
     .banner {
-        height: 799px; /* Ajusta la altura para pantallas más pequeñas */
+        width: 200px;
+        /* Ajusta la altura para pantallas más pequeñas */
     }
 
     .chocolate {
-        font-size: 200px; /* Reduce el tamaño del texto */
+        font-size: 200px;
+        /* Reduce el tamaño del texto */
     }
-    
+
     .huitzilli {
-        font-size: 170px; /* Reduce el tamaño del texto */
+        font-size: 170px;
+        /* Reduce el tamaño del texto */
         margin-top: -270px;
     }
-}
-
-@media (max-width: 1080px){
-    .banner {
-        display: flex;
-        width: auto;
-        
-     
-    }
-
-    .chocolate{
-        
-        font-size: 100px;
-        padding-top: 55px;
-        padding-bottom: 85px;
-    }
-
 }
 
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
 
-    .cajaLogoMarca{
+    .cajaLogoMarca {
         display: flex;
         flex-direction: column;
     }
 
 
     .banner {
-        height: 1050px; /* Ajusta la altura para pantallas más pequeñas */
+        height: 1050px;
+        /* Ajusta la altura para pantallas más pequeñas */
     }
 
     .banner img {
-        width: 30%; /* Aumenta el tamaño de la imagen en pantallas pequeñas */
+        width: 30%;
+        /* Aumenta el tamaño de la imagen en pantallas pequeñas */
         padding: 10px;
         margin-top: 105px;
     }
 
     .chocolate {
-        font-size: 130px; /* Reduce el tamaño del texto */
+        font-size: 100px;
+        /* Reduce el tamaño del texto */
         padding: 155px;
-       
+
     }
 
     .huitzilli {
-        font-size: 120px; /* Reduce el tamaño del texto */
+        font-size: 120px;
+        /* Reduce el tamaño del texto */
         padding: 35px;
-      
+
     }
 }
 
 @media (max-width: 480px) {
 
-    .cajaLogoMarca{
+    .cajaLogoMarca {
         display: flex;
-        flex-direction: column;
     }
 
     .banner {
-        height: 900px; /* Ajusta la altura para pantallas muy pequeñas */
+        display: flex;
+        width: auto;
+        height: 750px;
+        
+        
+        
     }
 
     .banner img {
-        width: 30%; /* Aumenta el tamaño de la imagen aún más en pantallas muy pequeñas */
+        width: 30%;
+        /* Aumenta el tamaño de la imagen aún más en pantallas muy pequeñas */
         padding: 5px;
         margin-bottom: 45px;
     }
 
     .chocolate {
-        font-size: 85px; /* Reduce aún más el tamaño del texto */
+        font-size: 65px;
+        /* Reduce aún más el tamaño del texto */
         padding-bottom: 250px;
+        text-shadow: 0px 0px 8px #edecc3;
     }
 
     .huitzilli {
-        font-size: 100px; /* Reduce aún más el tamaño del texto */
+        font-size: 80px;
+        /* Reduce aún más el tamaño del texto */
         padding-top: 0px;
     }
 }

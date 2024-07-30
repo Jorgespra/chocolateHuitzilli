@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(187, 110, 16);
     background-image: url('./GranoChocolateFondo.jpg');
     height: 1100px;
 
@@ -70,26 +69,6 @@
 }
 
 
-@media (max-width: 1080px) {
-    .ProductContainer {
-        background-color: white;
-        justify-content: center;
-        background-image: none;
-    }
-
-    .boxProduct {
-        border: solid;
-        border-color: black;
-        border-width: 5px;
-        width: 520px;
-        height: 550px;
-
-    }
-}
-
-
-
-
 @media (max-width: 900px) {
     .ProductContainer {
         height: 2850px;
@@ -128,14 +107,25 @@
 
     .ProductContainer {
         height: 3400px;
+        width: 420px;
+        background-color: white;
+        justify-content: center;
+   
     }
+
+    .tituloPrincipal {
+        font-size: 60px;
+    }
+
 
     .boxProduct {
         width: 380px;
         height: 690px;
+
     }
 
     .boxProduct h1 {
+        
         text-align: center;
     }
 
