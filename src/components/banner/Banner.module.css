@@ -103,8 +103,14 @@
 }
 
 @media (max-width: 1080px){
+    .banner {
+        display: flex;
+    }
+
+
+
     .chocolate{
-        font-size: 150px;
+        font-size: 120px;
         padding-top: 55px;
         padding-bottom: 35px;
     }
