@@ -105,9 +105,8 @@
 @media (max-width: 1080px){
     .banner {
         display: flex;
+        background-color: aqua;
     }
-
-
 
     .chocolate{
         font-size: 120px;
